@@ -1,0 +1,171 @@
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-size: 1.6em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #674baf;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 6rem 8rem;
+}
+
+header {
+  height: 13.4rem;
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 215px;
+  background-position: -1rem -0.7rem;
+}
+
+header h1 {
+  text-indent: -99999rem;
+}
+
+main {
+  display: flex;
+}
+
+figure {
+  margin-right: 5.4rem;
+  flex-basis: 70rem;
+  display: flex;
+}
+
+figure img {
+  margin-left: -7px;
+  width: 100%;
+  align-self: center;
+}
+
+section {
+  flex-basis: 52.5rem;
+}
+
+section h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 2.3rem;
+}
+
+section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.2rem;
+}
+
+section a {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  color: #674baf;
+  font-size: 1.8rem;
+  width: 20rem;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+section a:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logos .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 1.66rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 960px) {
+  header {
+    height: 9.5rem;
+    background-size: 13rem;
+    background-position: -6px 1px;
+  }
+  main {
+    display: block;
+  }
+  main > * {
+    text-align: center;
+  }
+  figure {
+    margin-right: 0;
+    flex-basis: 70rem;
+    display: block;
+    margin-bottom: 5.6rem;
+  }
+  figure img {
+    margin: 0;
+    max-width: 40rem;
+  }
+  .container {
+    margin: 3rem 4rem;
+  }
+  section h2 {
+    font-size: min(6.3vw, 4rem);
+    margin-bottom: 1.5rem;
+  }
+  section p {
+    font-size: min(4.2vw, 1.8rem);
+    max-width: 45rem;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+  }
+  section a {
+    font-size: min(3.1vw, 1.8rem);
+    height: min(11vw, 5.6rem);
+    margin: auto;
+  }
+  .logos {
+    justify-content: center;
+  }
+  .logos .logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 6.3rem 0.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
